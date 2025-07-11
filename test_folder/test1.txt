@@ -7,13 +7,21 @@ hello world4
 hello world5
 hello world6
 
+<<<<<<< Updated upstream
 hello world javascript
+=======
+hello world4
+>>>>>>> Stashed changes
 hello world7
 hello java
 hello 10
 hello py
 hello 11 
+<<<<<<< Updated upstream
 hello world javascript
+=======
+hello world3
+>>>>>>> Stashed changes
 
 hello world javascript
 
@@ -26,3 +34,8 @@ hello world java3
 hello world java python3
 hello world java
 hello world sss
+<<<<<<< Updated upstream
+=======
+hello world1
+hello world2
+>>>>>>> Stashed changes
