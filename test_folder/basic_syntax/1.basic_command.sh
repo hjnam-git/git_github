@@ -62,9 +62,9 @@ git revert 기존의커밋ID (취소하고 싶은 커밋ID)
 
 # 작업중인 사항을 임시저장 (충돌 상황에서 많이 사용)
 git stash
-# 저장한 최신의 작업목록을 꺼내기
+# 저장한 최신의 작업목록을 꺼내기 (후입선출)
 git stash pop
-# 임시저장한 목록은 그대로 놔둔채 특정 index항목 적용
+# 임시저장한 목록은 그대로 놔둔채 특정 index항목 적용 (stash 목록에서 제거되지는 않음)
 git stash apply 인덱스번호
 # 임시저장한 작업 내용 조회
 git stash show -p 인덱스번호
@@ -72,3 +72,14 @@ git stash show -p 인덱스번호
 git stash list
 # 저장목록 모두 삭제
 git stash clear
+
+# 버전명시
+git tag v1.0
+git tab -a v1.0 -m "메세지입력"
+
+# tag release 배포
+# commit push와 상관없이 태그별도로 push
+git push origin v1.0
+
+# 태그 목록조회
+git tag
